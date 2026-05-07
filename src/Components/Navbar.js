@@ -33,7 +33,7 @@ export default function Navbar() {
   // Menu Links
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
+    { name: "About", path: "/about-us" },
     { name: "Services", path: "/services" },
     { name: "FAQ", path: "/faq" },
     { name: "Contact", path: "/contact" },
