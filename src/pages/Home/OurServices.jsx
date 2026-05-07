@@ -79,10 +79,7 @@ We provide complete IT services including web development, mobile apps, digital 
       </div>
 
       <div className="relative  max-w-[1230px] mx-auto">
-       
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
           {services?.map((service, i) => (
             <div 
               key={i} 
