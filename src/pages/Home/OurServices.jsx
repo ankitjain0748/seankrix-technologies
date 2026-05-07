@@ -57,10 +57,10 @@ export default function OurServices() {
         />
         <div className="flex flex-col">
           <p className="flex items-center gap-2 text-xl font-bold tracking-widest uppercase mb-4 font" >
-            <span className="text-[#BFF747] text-2xl">*</span> Explore Our Services
+            <span className="text-[#00BFFF] text-2xl">*</span> Explore Our Services
           </p>
           <h1 className="text-3xl sm:text-6xl lg:text-5xl font-light leading-tight font" >
-          Powerful <span className="text-[#BFF747] font-bold">IT Solutions</span> for Your Business Growth
+          Powerful <span className="text-[#00BFFF] font-bold">IT Solutions</span> for Your Business Growth
           </h1>
         </div>
         <div className="flex flex-col items-start" >
@@ -68,22 +68,22 @@ export default function OurServices() {
 We provide complete IT services including web development, mobile apps, digital marketing, and social media management to help your business grow faster and smarter in the digital world.          </p>
           <Link href="/services" className="mt-10 flex items-center font">
             <button className="relative bg-gray-800 text-white font-semibold py-4 px-8 rounded-full overflow-hidden group">
-              <span className="absolute inset-0 bg-gradient-to-r from-[#BFF747] to-green-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+              <span className="absolute inset-0 bg-gradient-to-r from-[#00BFFF] to-green-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
               <span className="relative">View Details</span>
             </button>
-            <div className="w-14 h-14 bg-[#BFF747] rounded-full flex items-center justify-center ml-4 cursor-pointer group hover:scale-110 transition-transform duration-300">
+            <div className="w-14 h-14 bg-[#00BFFF] rounded-full flex items-center justify-center ml-4 cursor-pointer group hover:scale-110 transition-transform duration-300">
               <FiArrowUpRight className="h-6 w-6 text-black group-hover:rotate-45 transition-transform duration-300" />
             </div>
           </Link>
         </div>
       </div>
 
-      <div className="relative z-20 max-w-7xl mx-auto">
+      <div className="relative  max-w-[1230px] mx-auto">
        
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
-          {services.map((service, i) => (
+          {services?.map((service, i) => (
             <div 
               key={i} 
               className="relative flex flex-col justify-between p-8 rounded-3xl h-[350px]
@@ -98,8 +98,8 @@ We provide complete IT services including web development, mobile apps, digital 
              
             >
               <div className="flex items-start justify-between">
-                <span className="text-5xl text-[#BFF747]"  data-aos="fade-up" data-aos-anchor-placement="center-bottom">{service.icon}</span>
-                <div className="text-3xl text-[#BFF747] group-hover:rotate-45 transition-transform duration-300">
+                <span className="text-5xl text-[#00BFFF]"  data-aos="fade-up" data-aos-anchor-placement="center-bottom">{service.icon}</span>
+                <div className="text-3xl text-[#00BFFF] group-hover:rotate-45 transition-transform duration-300">
                   <FiArrowUpRight />
                 </div>
               </div>
@@ -114,7 +114,7 @@ We provide complete IT services including web development, mobile apps, digital 
         </div>
         <span className=" md-flex block  justify-center text-center items-center p-5 font">
          Let’s grow your business together. 
-<span className="text-[#BFF747] cursor-pointer">Get Free Consultation</span></span>
+<span className="text-[#00BFFF] cursor-pointer">Get Free Consultation</span></span>
       </div>
     </section>
   );

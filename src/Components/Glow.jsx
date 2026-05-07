@@ -29,7 +29,7 @@ export default function Glow({ position = 'right', size = 600, customStyles = {}
     >
       <div
         className="w-full h-full rounded-full 
-                   border-[60px] border-[#BFF747]
+                   border-[60px] border-[#00BFFF]
                    opacity-30 filter blur-3xl"
       ></div>
     </div>

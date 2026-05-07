@@ -64,7 +64,7 @@ const FeatureCard = ({ imageUrl, title, description }) => (
       <p className="text-gray-400 text-sm">{description}</p>
     </div>
 
-    <div className="mt-4 flex items-center text-[#BFF747]">
+    <div className="mt-4 flex items-center text-[#00BFFF]">
       <FiArrowUpRight />
     </div>
   </div>
@@ -86,11 +86,11 @@ export default function FeaturesSection() {
           
           <div>
             <p className="flex items-center gap-2 text-lg font-bold uppercase mb-4">
-              <span className="text-[#BFF747]">*</span> WHY CHOOSE US
+              <span className="text-[#00BFFF]">*</span> WHY CHOOSE US
             </p>
 
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Smart <span className="text-[#BFF747]">IT Solutions</span> for
+              Smart <span className="text-[#00BFFF]">IT Solutions</span> for
               modern businesses
             </h1>
           </div>
@@ -106,7 +106,7 @@ export default function FeaturesSection() {
                 Start Project
               </span>
 
-              <div className="w-12 h-12 bg-[#BFF747] rounded-full flex items-center justify-center group-hover:scale-110 transition">
+              <div className="w-12 h-12 bg-[#00BFFF] rounded-full flex items-center justify-center group-hover:scale-110 transition">
                 <FiArrowUpRight className="text-black group-hover:rotate-45 transition" />
               </div>
             </Link>
@@ -162,7 +162,7 @@ export default function FeaturesSection() {
                       href="#circlePath"
                       startOffset="50%"
                       textAnchor="middle"
-                      className="fill-[#BFF747] text-xs uppercase"
+                      className="fill-[#00BFFF] text-xs uppercase"
                     >
                       Free Consultation • Free Consultation •
                     </textPath>

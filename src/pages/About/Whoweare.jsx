@@ -56,12 +56,12 @@ export default function Whoweare() {
 
           <div>
             <p className="flex items-center gap-2 text-sm font-bold tracking-widest uppercase mb-4">
-              <span className="text-[#BFF747] text-xl">*</span> WHO WE ARE
+              <span className="text-[#00BFFF] text-xl">*</span> WHO WE ARE
             </p>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">
               Your trusted partner in{" "}
-              <span className="text-[#BFF747] font-bold">
+              <span className="text-[#00BFFF] font-bold">
                 IT & digital transformation
               </span>
             </h1>
@@ -86,7 +86,7 @@ export default function Whoweare() {
               />
 
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                <button className="w-14 h-14 bg-[#BFF747] rounded-full flex items-center justify-center text-black hover:scale-110 transition">
+                <button className="w-14 h-14 bg-[#00BFFF] rounded-full flex items-center justify-center text-black hover:scale-110 transition">
                   <FaPlay />
                 </button>
               </div>
@@ -97,7 +97,7 @@ export default function Whoweare() {
 
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} className="text-[#BFF747]" />
+                  <FaStar key={i} className="text-[#00BFFF]" />
                 ))}
               </div>
 
@@ -118,7 +118,7 @@ export default function Whoweare() {
 
               <Link
                 href="/contact"
-                className="flex items-center gap-2 text-[#BFF747] font-semibold mt-2 hover:underline"
+                className="flex items-center gap-2 text-[#00BFFF] font-semibold mt-2 hover:underline"
               >
                 Start Your Project <FiArrowUpRight />
               </Link>
@@ -141,7 +141,7 @@ export default function Whoweare() {
                   key={index}
                   className={`bg-[#111] p-8 rounded-3xl border border-white/10 
                   flex flex-col justify-between h-48 transition duration-300
-                  hover:-translate-y-2 hover:border-[#BFF747]/30
+                  hover:-translate-y-2 hover:border-[#00BFFF]/30
 
                   ${
                     index === 0 || index === 2
@@ -150,12 +150,12 @@ export default function Whoweare() {
                   }`}
                 >
 
-                  <div className="text-right text-[#BFF747]">
+                  <div className="text-right text-[#00BFFF]">
                     {stat.icon}
                   </div>
 
                   <div>
-                    <h3 className="text-4xl lg:text-5xl font-bold text-[#BFF747] mb-2">
+                    <h3 className="text-4xl lg:text-5xl font-bold text-[#00BFFF] mb-2">
                       <CountUp
                         end={number}
                         duration={2.5}
@@ -190,7 +190,7 @@ export default function Whoweare() {
 
         <Link
           href="/contact"
-          className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-[#BFF747] text-black rounded-full font-semibold hover:bg-white transition"
+          className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-[#00BFFF] text-black rounded-full font-semibold hover:bg-white transition"
         >
           Get Free Consultation
           <FiArrowUpRight />

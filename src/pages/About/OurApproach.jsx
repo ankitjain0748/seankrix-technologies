@@ -63,12 +63,12 @@ export default function OurApproach() {
 
         <div>
           <p className="flex items-center gap-2 text-sm sm:text-base font-bold tracking-widest uppercase mb-4">
-            <span className="text-[#BFF747] text-2xl">*</span> OUR APPROACH
+            <span className="text-[#00BFFF] text-2xl">*</span> OUR APPROACH
           </p>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">
             Building{" "}
-            <span className="text-[#BFF747] font-bold">
+            <span className="text-[#00BFFF] font-bold">
               scalable & impactful
             </span>{" "}
             digital solutions
@@ -114,7 +114,7 @@ export default function OurApproach() {
                                 group-hover:left-full transition duration-700 -skew-x-12"></div>
 
                 {/* Icon */}
-                <span className="absolute bottom-4 left-4 text-3xl text-[#BFF747]">
+                <span className="absolute bottom-4 left-4 text-3xl text-[#00BFFF]">
                   {card.icon}
                 </span>
               </div>

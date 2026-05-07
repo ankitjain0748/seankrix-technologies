@@ -13,7 +13,7 @@ const StatCounter = ({ percentage, children }) => {
 
   return (
     <div ref={ref}>
-      <p className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#BFF747]">
+      <p className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#00BFFF]">
         +
         {inView ? (
           <CountUp start={0} end={percentage} duration={2.5} />
@@ -42,7 +42,7 @@ export default function Expertise() {
             className="absolute -inset-1 sm:-inset-3 rounded-2xl z-0 blur-[2px]"
             style={{
               background:
-                "linear-gradient(180deg, #BFF747 0%, rgba(0,0,0,0.9) 80%)",
+                "linear-gradient(180deg, #00BFFF 0%, rgba(0,0,0,0.9) 80%)",
             }}
           />
 
@@ -59,7 +59,7 @@ export default function Expertise() {
                   data-aos="fade-up"
                 >
                   Expertise that drives{" "}
-                  <span className="text-[#BFF747]">
+                  <span className="text-[#00BFFF]">
                     digital growth & success
                   </span>
                 </h2>
@@ -89,7 +89,7 @@ export default function Expertise() {
 
                 <div data-aos="fade-up">
                   <h3 className="text-lg sm:text-xl font-bold">
-                    <span className="text-[#BFF747]">*</span> Web & App Development
+                    <span className="text-[#00BFFF]">*</span> Web & App Development
                   </h3>
                   <p className="text-sm sm:text-base text-gray-400 mt-2 leading-relaxed">
                     We build fast, secure, and scalable websites and mobile apps
@@ -100,7 +100,7 @@ export default function Expertise() {
 
                 <div data-aos="fade-up">
                   <h3 className="text-lg sm:text-xl font-bold">
-                    <span className="text-[#BFF747]">*</span> Digital Marketing & SEO
+                    <span className="text-[#00BFFF]">*</span> Digital Marketing & SEO
                   </h3>
                   <p className="text-sm sm:text-base text-gray-400 mt-2 leading-relaxed">
                     Grow your online presence with powerful SEO strategies,
@@ -111,7 +111,7 @@ export default function Expertise() {
 
                 <div data-aos="fade-up">
                   <h3 className="text-lg sm:text-xl font-bold">
-                    <span className="text-[#BFF747]">*</span> UI/UX & Branding
+                    <span className="text-[#00BFFF]">*</span> UI/UX & Branding
                   </h3>
                   <p className="text-sm sm:text-base text-gray-400 mt-2 leading-relaxed">
                     We design modern, user-friendly interfaces and strong brand
@@ -121,7 +121,7 @@ export default function Expertise() {
 
                 <div data-aos="fade-up">
                   <h3 className="text-lg sm:text-xl font-bold">
-                    <span className="text-[#BFF747]">*</span> Cloud & E-commerce Solutions
+                    <span className="text-[#00BFFF]">*</span> Cloud & E-commerce Solutions
                   </h3>
                   <p className="text-sm sm:text-base text-gray-400 mt-2 leading-relaxed">
                     From cloud deployment to complete e-commerce platforms, we

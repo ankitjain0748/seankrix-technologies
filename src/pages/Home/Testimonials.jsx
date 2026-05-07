@@ -50,11 +50,11 @@ export default function Testimonials() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start mb-24">
           <div data-aos="fade-right">
             <p className="flex items-center gap-2 text-xl font-bold tracking-widest uppercase mb-4">
-              <span className="text-[#BFF747] text-2xl">*</span>TESTIMONIALS
+              <span className="text-[#00BFFF] text-2xl">*</span>TESTIMONIALS
             </p>
             <h1 className="text-4xl sm:text-5xl font-light leading-tight">
               Read what they have to say about{" "}
-              <span className="text-[#BFF747] font-bold">working with us</span>
+              <span className="text-[#00BFFF] font-bold">working with us</span>
             </h1>
           </div>
           <div className="flex flex-col items-start lg:items-start" data-aos="fade-left">
@@ -63,10 +63,10 @@ export default function Testimonials() {
             </p>
             <div className="mt-10 flex items-center">
               <button className="relative bg-gray-800 text-white font-semibold py-4 px-8 rounded-full overflow-hidden group">
-                <span className="absolute inset-0 bg-gradient-to-r from-[#BFF747] to-green-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
+                <span className="absolute inset-0 bg-gradient-to-r from-[#00BFFF] to-green-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
                 <span className="relative">All Testimonials</span>
               </button>
-              <div className="w-14 h-14 bg-[#BFF747] rounded-full flex items-center justify-center ml-4 cursor-pointer group hover:scale-110 transition-transform duration-300">
+              <div className="w-14 h-14 bg-[#00BFFF] rounded-full flex items-center justify-center ml-4 cursor-pointer group hover:scale-110 transition-transform duration-300">
                 <FiArrowUpRight className="h-6 w-6 text-black group-hover:rotate-45 transition-transform duration-300" />
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function Testimonials() {
           {/* Left Rating Card */}
           <div className="w-full lg:w-2/5 flex-shrink-0 bg-[#0d0d0d] rounded-3xl p-8 sm:p-10 text-center border border-gray-800" data-aos="fade-right">
             <p className="text-8xl font-bold">4.9</p>
-            <div className="flex justify-center items-center gap-1 text-2xl text-[#BFF747] my-4">
+            <div className="flex justify-center items-center gap-1 text-2xl text-[#00BFFF] my-4">
               {[...Array(5)].map((_, i) => <FaStar key={i} />)}
             </div>
             <p className="text-gray-400 text-sm">( 40+ Reviews )</p>
@@ -109,7 +109,7 @@ export default function Testimonials() {
                   <img src={currentTestimonial.logo} alt="logo" className="w-10 h-10 rounded-full object-cover" />
                   <span className="font-bold text-lg">Logoipsum</span>
                 </div>
-                <div className="flex items-center gap-1 text-xl text-[#BFF747]">
+                <div className="flex items-center gap-1 text-xl text-[#00BFFF]">
                   {[...Array(currentTestimonial.stars)].map((_, i) => <FaStar key={i} />)}
                 </div>
                 

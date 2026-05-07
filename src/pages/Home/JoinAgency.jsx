@@ -35,12 +35,12 @@ export default function JoinAgency() {
 
         <div>
           <p className="flex items-center gap-2 text-lg font-bold uppercase mb-4 tracking-widest">
-            <span className="text-[#BFF747] text-2xl">*</span> Join Our Network
+            <span className="text-[#00BFFF] text-2xl">*</span> Join Our Network
           </p>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light leading-tight">
             Join our{" "}
-            <span className="text-[#BFF747] font-bold">
+            <span className="text-[#00BFFF] font-bold">
               digital community
             </span>{" "}
             & grow with us
@@ -70,7 +70,7 @@ export default function JoinAgency() {
 
             {/* Icon Circle */}
             <div className="absolute top-0 left-8 -translate-y-1/2 
-                            w-20 h-20 bg-[#BFF747] rounded-full 
+                            w-20 h-20 bg-[#00BFFF] rounded-full 
                             flex items-center justify-center text-black text-4xl
                             group-hover:bg-white group-hover:scale-110 
                             transition-all duration-300"
@@ -93,7 +93,7 @@ export default function JoinAgency() {
               {/* Arrow */}
               <div
                 className="w-12 h-12 rounded-full border border-gray-600 flex items-center justify-center
-                           group-hover:bg-[#BFF747] group-hover:border-[#BFF747]
+                           group-hover:bg-[#00BFFF] group-hover:border-[#00BFFF]
                            transition-all duration-300"
               >
                 <FiArrowUpRight
@@ -119,7 +119,7 @@ export default function JoinAgency() {
 
         <Link
           href="/contact"
-          className="inline-flex items-center gap-3 mt-6 px-6 py-3 bg-[#BFF747] text-black rounded-full font-semibold hover:bg-white transition"
+          className="inline-flex items-center gap-3 mt-6 px-6 py-3 bg-[#00BFFF] text-black rounded-full font-semibold hover:bg-white transition"
         >
           Get in Touch
           <FiArrowUpRight />

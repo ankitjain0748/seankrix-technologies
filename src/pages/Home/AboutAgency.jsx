@@ -56,17 +56,17 @@ export default function AboutAgency() {
        
         <div className="lg:sticky top-20 flex flex-col">
           <p className="flex items-center gap-2 text-xl font-bold tracking-widest uppercase text-white mb-6">
-            <span className="text-[#BFF747] text-2xl">*</span> ABOUT OUR COMPANY
+            <span className="text-[#00BFFF] text-2xl">*</span> ABOUT OUR COMPANY
           </p>
       <h2 className="text-5xl lg:text-6xl font-light leading-tight">
-  Crafting <span className="text-[#BFF747] font-bold">unique digital</span> experiences that elevate your brand
+  Crafting <span className="text-[#00BFFF] font-bold">unique digital</span> experiences that elevate your brand
 </h2> 
           
           <div className="mt-12 flex items-center">
             <button className="bg-gray-800/50 text-white py-4 px-8 rounded-full hover:bg-gray-700/50 transition-colors duration-300">
               Contact Us
             </button>
-            <div className="w-12 h-12 bg-[#BFF747] rounded-full flex items-center justify-center ml-4 cursor-pointer">
+            <div className="w-12 h-12 bg-[#00BFFF] rounded-full flex items-center justify-center ml-4 cursor-pointer">
               <FiArrowUpRight className="h-6 w-6 text-black" />
             </div>
           </div>

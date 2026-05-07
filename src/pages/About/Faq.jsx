@@ -42,7 +42,7 @@ const faqData = [
 // Accordion Component
 const AccordionItem = ({ item, isOpen, onClick }) => {
   return (
-    <div className="border border-white/10 rounded-2xl p-5 bg-[#111] hover:border-[#BFF747] transition">
+    <div className="border border-white/10 rounded-2xl p-5 bg-[#111] hover:border-[#00BFFF] transition">
       <button
         className="w-full flex justify-between items-center text-left"
         onClick={onClick}
@@ -51,7 +51,7 @@ const AccordionItem = ({ item, isOpen, onClick }) => {
           {item.question}
         </span>
 
-        <div className="bg-[#BFF747] text-black rounded-full p-2">
+        <div className="bg-[#00BFFF] text-black rounded-full p-2">
           {isOpen ? <FiMinus /> : <FiPlus />}
         </div>
       </button>
@@ -80,8 +80,8 @@ export default function FAQ() {
     <section className="relative w-full bg-black text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       
       {/* Glow Effects */}
-      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-[#BFF747]/10 blur-[150px] rounded-full"></div>
-      <div className="absolute top-1/4 left-0 w-[300px] h-[300px] bg-[#BFF747]/10 blur-[120px] rounded-full"></div>
+      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-[#00BFFF]/10 blur-[150px] rounded-full"></div>
+      <div className="absolute top-1/4 left-0 w-[300px] h-[300px] bg-[#00BFFF]/10 blur-[120px] rounded-full"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
@@ -96,7 +96,7 @@ export default function FAQ() {
 
             {/* Contact Badge */}
             <div className="absolute bottom-6 left-6 bg-black/60 backdrop-blur-md px-4 py-3 rounded-full flex items-center gap-3">
-              <div className="bg-[#BFF747] text-black rounded-full p-2">
+              <div className="bg-[#00BFFF] text-black rounded-full p-2">
                 <FaPhoneAlt />
               </div>
               <span className="text-sm font-medium">+91 98765 43210</span>
@@ -115,12 +115,12 @@ export default function FAQ() {
         <div className="flex flex-col gap-6">
           <div>
             <p className="flex items-center gap-2 text-sm font-bold uppercase mb-4 text-gray-400">
-              <span className="text-[#BFF747]">*</span> FAQ
+              <span className="text-[#00BFFF]">*</span> FAQ
             </p>
 
             <h2 className="text-4xl sm:text-5xl font-light leading-tight">
               Frequently Asked <br />
-              <span className="text-[#BFF747] font-bold">Questions</span>
+              <span className="text-[#00BFFF] font-bold">Questions</span>
             </h2>
 
             <p className="text-gray-400 mt-4 max-w-md">

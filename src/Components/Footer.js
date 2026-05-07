@@ -19,7 +19,7 @@ const ArtisticLogo = () => (
       height={40}
     />
     <span className="text-2xl font-bold text-white">
-      <span className="text-[#BFF747]">IT</span>Services
+      <span className="text-[#00BFFF]">IT</span>Services
     </span>
   </div>
 );
@@ -74,17 +74,17 @@ export default function Footer() {
             {/* Contact */}
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3">
-                <BsTelephone className="text-[#BFF747]" />
+                <BsTelephone className="text-[#00BFFF]" />
                 <span>+91 8824744976</span>
               </div>
 
               <div className="flex items-center gap-3">
-                <HiOutlineEnvelope className="text-[#BFF747]" />
+                <HiOutlineEnvelope className="text-[#00BFFF]" />
                 <span>ankitkumarjain0748@gmail.com</span>
               </div>
 
               <div className="flex items-center gap-3">
-                <FaMapMarkerAlt className="text-[#BFF747]" />
+                <FaMapMarkerAlt className="text-[#00BFFF]" />
                 <span>Jaipur, Rajasthan</span>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function Footer() {
                 <Link
                   key={i}
                   href={item.href ?? "/"}
-                  className="w-9 h-9 flex items-center justify-center border border-gray-700 rounded-full hover:bg-[#BFF747] hover:text-black transition"
+                  className="w-9 h-9 flex items-center justify-center border border-gray-700 rounded-full hover:bg-[#00BFFF] hover:text-black transition"
                 >
                   {item.icon}
                 </Link>
@@ -111,7 +111,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href ?? "/"}
-                    className="hover:text-[#BFF747] transition"
+                    className="hover:text-[#00BFFF] transition"
                   >
                     {link.name}
                   </Link>
@@ -128,7 +128,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href ?? "/"}
-                    className="hover:text-[#BFF747] transition"
+                    className="hover:text-[#00BFFF] transition"
                   >
                     {link.name}
                   </Link>

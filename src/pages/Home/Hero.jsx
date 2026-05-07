@@ -50,7 +50,7 @@ export default function Hero() {
 
           Transform Your Business With <br className="hidden md:block" />
 
-          <span className="inline-block min-w-[250px] md:min-w-[400px] lg:min-w-[500px] text-[#BFF747] font-bold">
+          <span className="inline-block min-w-[250px] md:min-w-[400px] lg:min-w-[500px] text-[#00BFFF] font-bold">
             <ReactTyped
               strings={typedStrings}
               typeSpeed={80}
@@ -85,7 +85,7 @@ export default function Hero() {
             </svg>
 
             <div className="absolute">
-              <div className="w-16 h-16 bg-[#BFF747] rounded-full flex items-center justify-center cursor-pointer shadow-lg">
+              <div className="w-16 h-16 bg-[#00BFFF] rounded-full flex items-center justify-center cursor-pointer shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-7 w-7 text-black"
@@ -114,11 +114,11 @@ export default function Hero() {
           className="mt-16 flex items-center mb-10"
           data-aos="fade-up"
         >
-          <button className="bg-[#BFF747] text-black py-4 px-8 rounded-full font-semibold hover:bg-white transition">
+          <button className="bg-[#00BFFF] text-black py-4 px-8 rounded-full font-semibold hover:bg-white transition">
             Get Free Consultation
           </button>
 
-          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center ml-4 cursor-pointer hover:bg-[#BFF747] transition group">
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center ml-4 cursor-pointer hover:bg-[#00BFFF] transition group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 text-black transform transition group-hover:rotate-90"

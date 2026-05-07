@@ -122,7 +122,7 @@ const FAQSection = () => {
             <div key={i} id={section.category.replace(/\s/g, "-")} className="mb-16">
 
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="text-[#BFF747]">
+                <span className="text-[#00BFFF]">
                   {section.category.split(" ")[0]}{" "}
                 </span>
                 {section.category.split(" ").slice(1).join(" ")}
@@ -141,7 +141,7 @@ const FAQSection = () => {
                       {faq.question}
                     </p>
 
-                    <span className="text-[#BFF747] text-2xl">
+                    <span className="text-[#00BFFF] text-2xl">
                       {openFAQ === faq.id ? "−" : "+"}
                     </span>
                   </div>
@@ -167,7 +167,7 @@ const FAQSection = () => {
                 <li key={i}>
                   <a
                     href={`#${section.category.replace(/\s/g, "-")}`}
-                    className="flex justify-between items-center py-4 border-b border-white/10 text-gray-300 hover:text-[#BFF747] transition"
+                    className="flex justify-between items-center py-4 border-b border-white/10 text-gray-300 hover:text-[#00BFFF] transition"
                   >
                     {section.category}
                     →
@@ -179,7 +179,7 @@ const FAQSection = () => {
 
           {/* CONTACT BOX */}
           <div className="bg-[#1A1A1A] rounded-2xl p-6 text-center">
-            <h3 className="text-2xl font-bold text-[#BFF747] mb-2">
+            <h3 className="text-2xl font-bold text-[#00BFFF] mb-2">
               Still have questions?
             </h3>
 
@@ -189,7 +189,7 @@ const FAQSection = () => {
 
             <Link
               href="/contact"
-              className="bg-[#BFF747] text-black px-6 py-3 rounded-full font-semibold inline-block hover:scale-105 transition"
+              className="bg-[#00BFFF] text-black px-6 py-3 rounded-full font-semibold inline-block hover:scale-105 transition"
             >
               Contact Us
             </Link>

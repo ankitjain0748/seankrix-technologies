@@ -32,13 +32,13 @@ export default function FaqHero() {
         
         {/* ✅ Bada Heading: "Contact us" */}
         <h1 className="font-light text-6xl sm:text-7xl md:text-8xl leading-snug">
-          Frequently  <span className="font-bold text-[#BFF747]">Asked </span>Questions
+          Frequently  <span className="font-bold text-[#00BFFF]">Asked </span>Questions
         </h1>
         
         {/* ✅ Breadcrumb: "Home * Contact us" */}
         <div className="flex items-center gap-3 mt-4 text-gray-300">
           <Link href="/" className="hover:text-white transition-colors">Home</Link>
-          <span className="text-[#BFF747] text-xl">*</span>
+          <span className="text-[#00BFFF] text-xl">*</span>
           <span className="text-white">Faq</span>
         </div>
       </div>

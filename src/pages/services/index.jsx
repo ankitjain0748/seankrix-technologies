@@ -64,7 +64,7 @@ export default function ServicesPage() {
                     </p>
 
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-light leading-tight">
-                        We Provide <span className="text-[#BFF747] font-bold">Best IT Solutions</span>
+                        We Provide <span className="text-[#00BFFF] font-bold">Best IT Solutions</span>
                     </h1>
 
                     <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
@@ -78,10 +78,10 @@ export default function ServicesPage() {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group bg-[#111] border border-white/10 rounded-3xl p-8 hover:border-[#BFF747] transition-all duration-300 hover:-translate-y-2"
+                            className="group bg-[#111] border border-white/10 rounded-3xl p-8 hover:border-[#00BFFF] transition-all duration-300 hover:-translate-y-2"
                         >
                             {/* ICON */}
-                            <div className="text-[#BFF747] text-4xl mb-6 group-hover:scale-110 transition">
+                            <div className="text-[#00BFFF] text-4xl mb-6 group-hover:scale-110 transition">
                                 {service.icon}
                             </div>
 
@@ -94,7 +94,7 @@ export default function ServicesPage() {
                             </p>
 
                             {/* BUTTON */}
-                            <div className="flex items-center gap-3 text-[#BFF747] font-medium cursor-pointer">
+                            <div className="flex items-center gap-3 text-[#00BFFF] font-medium cursor-pointer">
                                 Learn More
                                 <FiArrowUpRight className="group-hover:rotate-45 transition" />
                             </div>
@@ -114,7 +114,7 @@ export default function ServicesPage() {
                         get a free consultation for your project.
                     </p>
 
-                    <button className="bg-[#BFF747] text-black px-8 py-4 rounded-full font-semibold hover:bg-white transition">
+                    <button className="bg-[#00BFFF] text-black px-8 py-4 rounded-full font-semibold hover:bg-white transition">
                         Get Free Consultation
                     </button>
                 </div>

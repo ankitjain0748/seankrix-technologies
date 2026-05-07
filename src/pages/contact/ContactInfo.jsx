@@ -36,7 +36,7 @@ const FormInput = ({ type = "text", placeholder, name, onChange, value }) => (
     onChange={onChange}
     placeholder={placeholder}
     required
-    className="w-full bg-black/30 border border-white/10 rounded-lg px-5 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#BFF747]/50"
+    className="w-full bg-black/30 border border-white/10 rounded-lg px-5 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#00BFFF]/50"
   />
 );
 
@@ -133,7 +133,7 @@ export default function ContactForm() {
         {/* LEFT SIDE */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold">
-            Get in <span className="text-[#BFF747]">touch</span>
+            Get in <span className="text-[#00BFFF]">touch</span>
           </h1>
 
           <p className="text-gray-400 mt-4">
@@ -147,7 +147,7 @@ export default function ContactForm() {
                 href={item.to}
                 className="bg-white/5 border border-white/10 p-6 rounded-2xl text-center"
               >
-                <div className="text-3xl text-[#BFF747] mb-3">
+                <div className="text-3xl text-[#00BFFF] mb-3">
                   {item.icon}
                 </div>
                 <h3 className="font-bold">{item.title}</h3>
@@ -161,7 +161,7 @@ export default function ContactForm() {
               href="#"
               className="bg-white/5 border border-white/10 p-5 rounded-2xl flex gap-4 items-center"
             >
-              <div className="text-2xl text-[#BFF747]">
+              <div className="text-2xl text-[#00BFFF]">
                 {contactInfo[2].icon}
               </div>
               <div>
@@ -199,7 +199,7 @@ export default function ContactForm() {
               className="w-full bg-black/30 border border-white/10 rounded-lg px-5 py-4 text-white"
             />
 
-            <button className="w-full bg-[#BFF747] text-black py-3 rounded-lg font-bold hover:opacity-90">
+            <button className="w-full bg-[#00BFFF] text-black py-3 rounded-lg font-bold hover:opacity-90">
               Send Message
             </button>
           </form>
@@ -215,7 +215,7 @@ export default function ContactForm() {
             </h3>
             <button
               onClick={() => setIsSubmitted(false)}
-              className="mt-4 bg-[#BFF747] px-4 py-2 rounded"
+              className="mt-4 bg-[#00BFFF] px-4 py-2 rounded"
             >
               Close
             </button>

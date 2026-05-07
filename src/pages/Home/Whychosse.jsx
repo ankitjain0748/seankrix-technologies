@@ -34,7 +34,7 @@ const FeatureCard = ({ title, description }) => (
     {/* ✅✅✅ YEH PEHLE WALA GREEN HOVER EFFECT HAI ✅✅✅ */}
     {/* Yeh div pehle screen ke bahar rehta hai aur hover par right mein slide hota hai */}
     <div 
-      className="absolute inset-0 bg-gradient-to-r from-white/10 via-[#BFF747]/10 to-transparent
+      className="absolute inset-0 bg-gradient-to-r from-white/10 via-[#00BFFF]/10 to-transparent
                  -translate-x-full group-hover:translate-x-0 
                  transition-transform duration-500 ease-in-out"
     ></div>
@@ -62,11 +62,11 @@ export default function Whychosse() {
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-16 lg:mb-24">
           <div data-aos="fade-right">
             <p className="flex items-center gap-2 text-xl font-bold tracking-[0.2em] uppercase mb-4">
-              <span className="text-[#BFF747] text-2xl">*</span>WHY CHOOSE US
+              <span className="text-[#00BFFF] text-2xl">*</span>WHY CHOOSE US
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight">
-            Reliable <span className="text-[#BFF747]">IT solutions</span> for your business success
-<span className="text-[#BFF747]">.</span>
+            Reliable <span className="text-[#00BFFF]">IT solutions</span> for your business success
+<span className="text-[#00BFFF]">.</span>
             </h1>
           </div>
           <div data-aos="fade-left">
