@@ -99,7 +99,7 @@ export default function FAQ() {
               <div className="bg-[#00BFFF] text-black rounded-full p-2">
                 <FaPhoneAlt />
               </div>
-              <span className="text-sm font-medium">+91 98765 43210</span>
+              <span className="text-sm font-medium">+91 88247 44976</span>
             </div>
           </div>
 

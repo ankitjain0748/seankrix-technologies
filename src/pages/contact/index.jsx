@@ -14,13 +14,12 @@ import WhatsAppButton from '@/Components/WhatsAppButton';
 
 export default function Index() {
   return (
-  
+
     <main className='bg-black'>
-      
-     
+
+
       <div className="">
-        
-      
+
         <div className='relative z-20'>
           <Navbar />
           <ContactHero />
@@ -29,8 +28,8 @@ export default function Index() {
         <Banner />
         <ContactInfo />
         <Footer />
-      </div>                    <WhatsAppButton/>
-      
+      </div>                    <WhatsAppButton />
+
 
     </main>
   );

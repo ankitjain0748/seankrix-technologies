@@ -78,7 +78,7 @@ const nextConfig = {
               style-src 'self' 'unsafe-inline';
               img-src 'self' data: https://images.unsplash.com;
               font-src 'self' data:;
-              connect-src 'self';
+              connect-src 'self' https://api.emailjs.com;
             `
               .replace(/\n/g, ""),
           },
