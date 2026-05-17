@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
+import { FiPlus, FiMinus } from "react-icons/fi";
 
 const FAQSection = () => {
+  const [activeTab, setActiveTab] = useState(0);
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const faqs = [
@@ -28,14 +30,9 @@ const FAQSection = () => {
           answer:
             "Yes, we offer a free consultation to understand your business needs and suggest the best solution.",
         },
-        {
-          id: "general4",
-          question: "Which industries do you work with?",
-          answer:
-            "We work with startups, small businesses, e-commerce brands, education, healthcare, and enterprise clients.",
-        },
       ],
     },
+
     {
       category: "Web & App Development",
       questions: [
@@ -43,45 +40,35 @@ const FAQSection = () => {
           id: "dev1",
           question: "Do you build custom websites?",
           answer:
-            "Yes, we build fully customized, fast, and responsive websites using modern technologies like React, Next.js, and Node.js.",
+            "Yes, we build fully customized, fast, and responsive websites using React, Next.js, and Node.js.",
         },
         {
           id: "dev2",
           question: "Do you develop mobile apps?",
           answer:
-            "We create high-performance Android and iOS apps with modern UI and smooth user experience.",
-        },
-        {
-          id: "dev3",
-          question: "Can you redesign my existing website?",
-          answer:
-            "Absolutely! We can redesign your website to improve UI, speed, SEO, and conversions.",
+            "We create high-performance Android and iOS apps with modern UI and smooth UX.",
         },
       ],
     },
+
     {
-      category: "Digital Marketing & SEO",
+      category: "SEO & Marketing",
       questions: [
         {
           id: "seo1",
           question: "Do you provide SEO services?",
           answer:
-            "Yes, we offer complete SEO services including on-page SEO, technical SEO, keyword research, and backlink building.",
+            "Yes, we offer technical SEO, on-page SEO, keyword research, and ranking optimization.",
         },
         {
           id: "seo2",
-          question: "How long does SEO take?",
-          answer:
-            "SEO is a long-term strategy. You can start seeing results within 3-6 months depending on competition.",
-        },
-        {
-          id: "seo3",
           question: "Do you manage social media?",
           answer:
-            "Yes, we handle social media strategy, content creation, posting, and growth marketing.",
+            "Yes, we handle complete social media growth and content marketing.",
         },
       ],
     },
+
     {
       category: "Pricing & Support",
       questions: [
@@ -89,19 +76,13 @@ const FAQSection = () => {
           id: "price1",
           question: "What is your pricing model?",
           answer:
-            "Pricing depends on project requirements. We offer fixed pricing, hourly rates, and monthly packages.",
+            "Pricing depends on project requirements and features.",
         },
         {
           id: "price2",
-          question: "Do you provide support after project delivery?",
+          question: "Do you provide support after delivery?",
           answer:
-            "Yes, we offer ongoing maintenance and support packages.",
-        },
-        {
-          id: "price3",
-          question: "What payment methods do you accept?",
-          answer:
-            "We accept bank transfer, UPI, credit/debit cards, and international payments.",
+            "Yes, we provide maintenance and support services.",
         },
       ],
     },
@@ -112,88 +93,101 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="min-h-screen bg-black text-white px-4 md:px-10 py-16">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
+    <section className="relative bg-black text-white py-24 px-4 overflow-hidden">
 
-        {/* LEFT SIDE */}
-        <div className="flex-1 md:overflow-y-auto  md:max-h-[calc(100vh-100px)] pr-2">
+      {/* Glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#00BFFF]/10 blur-[150px] rounded-full"></div>
 
-          {faqs.map((section, i) => (
-            <div key={i} id={section.category.replace(/\s/g, "-")} className="mb-16">
+      <div className="relative z-10 max-w-6xl mx-auto">
 
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="text-[#00BFFF]">
-                  {section.category.split(" ")[0]}{" "}
-                </span>
-                {section.category.split(" ").slice(1).join(" ")}
-              </h2>
 
-              {section.questions.map((faq) => (
-                <div
-                  key={faq.id}
-                  className="bg-[#1A1A1A] rounded-xl p-5 mb-4 border border-white/10"
-                >
-                  <div
-                    className="flex justify-between items-center cursor-pointer"
-                    onClick={() => toggleFAQ(faq.id)}
-                  >
-                    <p className="text-lg md:text-xl font-medium">
-                      {faq.question}
-                    </p>
+        {/* Tabs */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {faqs.map((tab, index) => (
+            <button
+              key={index}
+              onClick={() => {
+                setActiveTab(index);
+                setOpenFAQ(null);
+              }}
+              className={`px-6 py-3 rounded-full border transition-all duration-300 font-medium
+                ${
+                  activeTab === index
+                    ? "bg-[#00BFFF] text-black border-[#00BFFF]"
+                    : "border-white/10 bg-white/5 hover:bg-[#00BFFF] hover:text-black"
+                }`}
+            >
+              {tab.category}
+            </button>
+          ))}
+        </div>
 
-                    <span className="text-[#00BFFF] text-2xl">
-                      {openFAQ === faq.id ? "−" : "+"}
-                    </span>
-                  </div>
+        {/* FAQ Cards */}
+        <div className="space-y-5">
+          {faqs[activeTab].questions.map((faq) => (
+            <div
+              key={faq.id}
+              className={`rounded-2xl border transition-all duration-300 overflow-hidden
+                ${
+                  openFAQ === faq.id
+                    ? "border-[#00BFFF] bg-[#00BFFF]/10"
+                    : "border-white/10 bg-white/5"
+                }`}
+            >
+              {/* Question */}
+              <button
+                onClick={() => toggleFAQ(faq.id)}
+                className="w-full flex items-center justify-between p-6 text-left"
+              >
+                <h3 className="text-lg md:text-xl font-semibold">
+                  {faq.question}
+                </h3>
 
-                  {openFAQ === faq.id && (
-                    <p className="mt-3 text-gray-400 text-base leading-relaxed">
-                      {faq.answer}
-                    </p>
+                <div className="text-2xl text-[#00BFFF]">
+                  {openFAQ === faq.id ? (
+                    <FiMinus />
+                  ) : (
+                    <FiPlus />
                   )}
                 </div>
-              ))}
+              </button>
+
+              {/* Answer */}
+              <div
+                className={`grid transition-all duration-500 ease-in-out ${
+                  openFAQ === faq.id
+                    ? "grid-rows-[1fr] opacity-100"
+                    : "grid-rows-[0fr] opacity-0"
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <p className="px-6 pb-6 text-gray-300 leading-8">
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
 
-        {/* RIGHT SIDEBAR */}
-        <div className="md:w-80 sticky top-10 h-fit">
+        {/* Bottom CTA */}
+        <div className="mt-16 text-center bg-white/5 border border-white/10 rounded-3xl p-10">
 
-          {/* CATEGORY LINKS */}
-          <div className="bg-[#1A1A1A] rounded-2xl p-6 mb-6">
-            <ul>
-              {faqs.map((section, i) => (
-                <li key={i}>
-                  <a
-                    href={`#${section.category.replace(/\s/g, "-")}`}
-                    className="flex justify-between items-center py-4 border-b border-white/10 text-gray-300 hover:text-[#00BFFF] transition"
-                  >
-                    {section.category}
-                    →
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <h3 className="text-3xl font-bold">
+            Still Have Questions?
+          </h3>
 
-          {/* CONTACT BOX */}
-          <div className="bg-[#1A1A1A] rounded-2xl p-6 text-center">
-            <h3 className="text-2xl font-bold text-[#00BFFF] mb-2">
-              Still have questions?
-            </h3>
+          <p className="text-gray-400 mt-4 max-w-xl mx-auto">
+            Our expert team is always ready to help you with your business,
+            website, app, SEO, and digital growth needs.
+          </p>
 
-            <p className="text-gray-400 mb-4">
-              Our expert team is here to help you anytime.
-            </p>
-
-            <Link
-              href="/contact"
-              className="bg-[#00BFFF] text-black px-6 py-3 rounded-full font-semibold inline-block hover:scale-105 transition"
-            >
-              Contact Us
-            </Link>
-          </div>
+          <Link
+            href="/contact"
+            className="inline-flex mt-8 bg-[#00BFFF] text-black px-8 py-4 rounded-full font-semibold hover:bg-white transition-all duration-300"
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
     </section>

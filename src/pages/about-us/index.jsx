@@ -8,16 +8,14 @@ import Whoweare from './Whoweare';
 import Partners from './Partners';
 import FAQ from './Faq';
 import WhatsAppButton from '@/Components/WhatsAppButton';
+import Layout from '@/Components/Layout';
 
 export default function Index() {
   return (
 
-    <main className='bg-black'>
-      <div className='relative z-20'>
-        <Navbar />
-        <AboutHero />
+    <Layout>
 
-      </div>
+      <AboutHero />
 
       <Banner />
       <OurApproach />
@@ -25,13 +23,7 @@ export default function Index() {
       <Partners />
       <FAQ />
 
+    </Layout>
 
-      <Footer />
-
-      <WhatsAppButton />
-
-
-
-    </main>
   );
 }

@@ -10,6 +10,7 @@ import { HiOutlineCircleStack } from "react-icons/hi2";
 import FeatureItem from '../../items/FeatureItem';
 import Glow from '../../Components/Glow';
 import FloatingImage from '../../Components/FloatingImage';
+import Link from 'next/link';
 
 const AGENCY_IMAGE_URL = 'https://demo.awaikenthemes.com/artistics/wp-content/themes/artistics/assets/images/about-agency-bg.png';
 
@@ -46,42 +47,42 @@ export default function AboutAgency() {
     <section className="relative bg-black text-white py-24 px-4 sm:px-8 md:px-16 ">
 
       <div className="absolute inset-0 overflow-hidden z-10">
-      <Glow position="right" size={600}  customStyles={{top: '400px' }} />
+        <Glow position="right" size={600} customStyles={{ top: '400px' }} />
         <FloatingImage imageUrl={AGENCY_IMAGE_URL} position="left" opacity="opacity-30" />
-        </div>
-        
-     
+      </div>
+
+
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
-        
-       
+
+
         <div className="lg:sticky top-20 flex flex-col">
           <p className="flex items-center gap-2 text-xl font-bold tracking-widest uppercase text-white mb-6">
             <span className="text-[#00BFFF] text-2xl">*</span> ABOUT OUR COMPANY
           </p>
-      <h2 className="text-5xl lg:text-6xl font-light leading-tight">
-  Crafting <span className="text-[#00BFFF] font-bold">unique digital</span> experiences that elevate your brand
-</h2> 
-          
-          <div className="mt-12 flex items-center">
+          <h2 className="text-5xl lg:text-6xl font-light leading-tight">
+            Crafting <span className="text-[#00BFFF] font-bold">unique digital</span> experiences that elevate your brand
+          </h2>
+
+          <Link href="/contact" className="mt-12 flex items-center">
             <button className="bg-gray-800/50 text-white py-4 px-8 rounded-full hover:bg-gray-700/50 transition-colors duration-300">
               Contact Us
             </button>
             <div className="w-12 h-12 bg-[#00BFFF] rounded-full flex items-center justify-center ml-4 cursor-pointer">
               <FiArrowUpRight className="h-6 w-6 text-black" />
             </div>
-          </div>
-          
-      
+          </Link>
+
+
           <div className="absolute top-64  -z-10">
-           
+
           </div>
         </div>
 
-      
+
         <div className="mt-16 lg:mt-0">
           <div className="space-y-24">
             {features.map((feature, index) => (
-              <FeatureItem 
+              <FeatureItem
                 key={index}
                 icon={feature.icon}
                 title={feature.title}

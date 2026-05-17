@@ -14,54 +14,53 @@ import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
 import WhatsAppButton from "@/Components/WhatsAppButton";
 import Link from "next/link";
+import Layout from "@/Components/Layout";
 
 // SERVICES DATA
 const services = [
     {
         icon: <FaCode />,
         title: "Web Development",
-        slug:"web-development",
+        slug: "web-development",
         desc: "Custom websites built with modern technologies like React, Next.js for high performance and scalability.",
     },
     {
         icon: <FaMobileAlt />,
         title: "Mobile App Development",
-         slug:"mobile-app-development",
+        slug: "mobile-app-development",
         desc: "Android & iOS apps with smooth UI/UX and powerful backend systems.",
     },
     {
         icon: <FaPaintBrush />,
         title: "UI/UX Design",
-         slug:"ui-ux-design",
+        slug: "ui-ux-design",
         desc: "Creative and user-focused design to improve engagement and user experience.",
     },
     {
         icon: <FaSearch />,
         title: "SEO Optimization",
-         slug:"seo-optimization",
+        slug: "seo-optimization",
         desc: "Boost your Google ranking and increase organic traffic with proven SEO strategies.",
     },
     {
         icon: <FaCloud />,
         title: "Cloud Solutions",
-         slug:"cloud-solutions",
+        slug: "cloud-solutions",
         desc: "Secure, scalable cloud infrastructure using AWS, Google Cloud & Azure.",
     },
     {
         icon: <FaShoppingCart />,
         title: "E-Commerce Development",
-         slug:"ecommerce-development",
+        slug: "ecommerce-development",
         desc: "Build powerful online stores with Shopify, WooCommerce & custom solutions.",
     },
 ];
 
 export default function ServicesPage() {
     return (
-        <div>
-             <main className='bg-black'>
-      <div className=' z-20 '>
-            <Navbar />
-            </div>
+
+        <Layout>
+
             <section className="bg-black text-white py-20 px-4 sm:px-8">
 
                 {/* HERO */}
@@ -101,7 +100,7 @@ export default function ServicesPage() {
                             </p>
 
                             {/* BUTTON */}
-                            <Link  href={`/services/${service.slug}`} className="flex items-center gap-3 text-[#00BFFF] font-medium cursor-pointer">
+                            <Link href={`/services/${service.slug}`} className="flex items-center gap-3 text-[#00BFFF] font-medium cursor-pointer">
                                 Learn More
                                 <FiArrowUpRight className="group-hover:rotate-45 transition" />
                             </Link>
@@ -121,16 +120,14 @@ export default function ServicesPage() {
                         get a free consultation for your project.
                     </p>
 
-                    <button className="bg-[#00BFFF] text-black px-8 py-4 rounded-full font-semibold hover:bg-white transition">
+                    <Link href="/contact" className="bg-[#00BFFF] text-black px-8 py-4 rounded-full font-semibold hover:bg-white transition">
                         Get Free Consultation
-                    </button>
+                    </Link>
                 </div>
 
             </section>
+        </Layout>
 
-            <Footer />
-                   <WhatsAppButton/>
-            </main>
-        </div>
+
     );
 }

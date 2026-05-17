@@ -13,7 +13,7 @@ import Glow from "./Glow";
 const ArtisticLogo = () => (
   <div className="flex items-center gap-2">
     <Image
-      src="/logo.png" // 👈 apna logo path
+      src="/seankrix_technologieslogo.png" // 👈 apna logo path
       alt="logo"
       width={40}
       height={40}
@@ -40,16 +40,15 @@ const servicesLinks = [
 ];
 
 const socialIcons = [
-  { icon: <FaFacebookF />, href: "/" },
-  { icon: <FaInstagram />, href: "/" },
-  { icon: <FaLinkedinIn />, href: "/" },
-  { icon: <FaXTwitter />, href: "/" },
+  { icon: <FaFacebookF />, href: "https://www.facebook.com/profile.php?id=61589234190650" },
+  { icon: <FaInstagram />, href: "https://www.instagram.com/seankrix_technologies_/" },
+  { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/in/seankrix-technologies-73b269407/" },
 ];
 
 export default function Footer() {
   return (
     <footer className="relative bg-black text-white">
-      
+
       {/* Glow */}
       <div className="absolute inset-0 z-0">
         <Glow position="left" size={500} />

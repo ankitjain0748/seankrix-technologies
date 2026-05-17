@@ -8,29 +8,20 @@ import Banner from '../Home/Banner';
 import Footer from '../../Components/Footer';
 import ContactHero from './ContactHero';
 import ContactInfo from './ContactInfo';
-import LetsCollaborate from '../../Components/LetsCollaborate';
 import WhatsAppButton from '@/Components/WhatsAppButton';
+import Layout from '@/Components/Layout';
 
 
 export default function Index() {
   return (
 
-    <main className='bg-black'>
+    <Layout>
+
+      <ContactHero />
+      <Banner />
+      <ContactInfo />
+    </Layout>
 
 
-      <div className="">
-
-        <div className='relative z-20'>
-          <Navbar />
-          <ContactHero />
-        </div>
-
-        <Banner />
-        <ContactInfo />
-        <Footer />
-      </div>                    <WhatsAppButton />
-
-
-    </main>
   );
 }

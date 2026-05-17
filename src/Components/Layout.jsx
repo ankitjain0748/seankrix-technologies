@@ -8,14 +8,13 @@ function Layout({ children }) {
     return (
         <div className="bg-black text-white overflow-hidden">
 
-            {/* Background Blur Effects */}
-            <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
+            {/* <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
 
                 <div className="absolute top-[-100px] left-[-100px] w-[350px] h-[350px] bg-cyan-500/20 blur-[120px] rounded-full"></div>
 
                 <div className="absolute bottom-[-100px] right-[-100px] w-[350px] h-[350px] bg-blue-500/20 blur-[120px] rounded-full"></div>
 
-            </div>
+            </div> */}
 
             {/* Navbar */}
             <Navbar />
@@ -54,7 +53,7 @@ function Layout({ children }) {
             </a>
 
             {/* Scroll To Top */}
-            <button
+            {/* <button
                 onClick={() =>
                     window.scrollTo({
                         top: 0,
@@ -81,7 +80,7 @@ function Layout({ children }) {
         "
             >
                 ↑
-            </button>
+            </button> */}
 
             {/* Footer */}
             <Footer />

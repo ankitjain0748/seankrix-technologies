@@ -6,27 +6,19 @@ import Footer from '../../Components/Footer';
 import LetsCollaborate from '../../Components/LetsCollaborate';
 import FaqSection from './FaqSection';
 import WhatsAppButton from '@/Components/WhatsAppButton';
+import Layout from '@/Components/Layout';
 export default function Index() {
   return (
-  
-    <main className='bg-black'>
-      
-     
-      <div className="">
-        
-      
-        <div className='relative z-20'>
-          <Navbar />
-          <FaqHero />
-          
-        </div>
 
-        <Banner />
-        <FaqSection />
-        <Footer />
-      </div> 
-                   <WhatsAppButton/>
 
-    </main>
+    <Layout>
+
+      <Navbar />
+      <FaqHero />
+
+
+      <Banner />
+      <FaqSection />
+    </Layout>
   );
 }

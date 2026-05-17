@@ -4,6 +4,7 @@ import { useMemo, useEffect } from "react";
 import { ReactTyped } from "react-typed";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 export default function Hero() {
 
@@ -110,13 +111,13 @@ export default function Hero() {
         </div>
 
         {/* CTA Buttons */}
-        <div
-          className="mt-16 flex items-center mb-10"
+        <Link href="/contact"
+          className="mt-16 flex items-center mb-10 cursor-pointer"
           data-aos="fade-up"
         >
-          <button className="bg-[#00BFFF] text-black py-4 px-8 rounded-full font-semibold hover:bg-white transition">
+           <button className="bg-[#00BFFF] text-black cursor-pointer py-4 px-8 rounded-full font-semibold hover:bg-white transition">
             Get Free Consultation
-          </button>
+          </button> 
 
           <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center ml-4 cursor-pointer hover:bg-[#00BFFF] transition group">
             <svg
@@ -129,7 +130,7 @@ export default function Hero() {
               <path strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </div>
-        </div>
+        </Link>
 
       </div>
     </div>
