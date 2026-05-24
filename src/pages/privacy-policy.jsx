@@ -77,7 +77,7 @@ function Index() {
       </p>
 
       <p className="mt-3">
-        Email: ankitkumarjain0748@gmail.com
+        Email: info@seankrixtechnologies.com
         <br />
         Phone: +91 88247 44976
       </p>

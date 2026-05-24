@@ -15,8 +15,8 @@ const contactInfo = [
   {
     icon: <FiMail />,
     title: "Email Address",
-    detail: "ankitkumarjain0748@gmail.com",
-    to: "mailto:ankitkumarjain0748@gmail.com",
+    detail: "info@seankrixtechnologies.com",
+    to: "mailto:info@seankrixtechnologies.com",
   },
   {
     icon: <FiMapPin />,

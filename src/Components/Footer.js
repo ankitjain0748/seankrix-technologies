@@ -79,7 +79,7 @@ export default function Footer() {
 
               <div className="flex items-center gap-3">
                 <HiOutlineEnvelope className="text-[#00BFFF]" />
-                <span>ankitkumarjain0748@gmail.com</span>
+                <span>info@seankrixtechnologies.com</span>
               </div>
 
               <div className="flex items-center gap-3">

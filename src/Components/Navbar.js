@@ -195,7 +195,7 @@ const navLinks = [ { name: "Home", path: "/" }, { name: "About", path: "/about-u
             <div>
               <p className="text-white font-semibold">Email</p>
               <p className="text-gray-400 text-sm break-all">
-                ankitkumarjain0748@gmail.com
+info@seankrixtechnologies.com
               </p>
             </div>
           </div>
