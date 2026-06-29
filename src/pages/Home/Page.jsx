@@ -17,56 +17,104 @@ function Page() {
     <>
       <Head>
         <title>
-          Seankrix Technologies | Web Development, Mobile App Development & Digital Solutions
+          Website Development Company in India | Seankrix Technologies - Web, Mobile App & Software Development
         </title>
 
         <meta
           name="description"
-          content="Seankrix Technologies is a leading IT company providing Web Development, Mobile App Development, E-Commerce Solutions, UI/UX Design, SEO, Digital Marketing, Custom Software Development, and Cloud Solutions for startups and businesses worldwide."
+          content="Seankrix Technologies is a leading Website Development Company in India providing Custom Website Development, Mobile App Development, eCommerce Solutions, CRM, ERP, SEO, Digital Marketing, UI/UX Design and Software Development services."
         />
 
-      <meta
-  name="keywords"
-  content="Seankrix Technologies, IT Company India, Software Development Company, Web Development Company, Web Development Company India, Website Development Services, Custom Website Development, Responsive Website Design, Business Website Development, Startup Website Development, Affordable Website Development, Website Maintenance Services, Website Redesign Services, E-Commerce Website Development, Ecommerce Website Development, React JS Development, React JS Development Company, Next JS Development, Next JS Development Company, MERN Stack Development, MERN Stack Developer, Node JS Development, Full Stack Development, Frontend Development, Backend Development, Mobile App Development, Mobile App Development Company, Android App Development, iOS App Development, Flutter App Development, Cross Platform App Development, UI UX Design Services, SEO Services, SEO Services India, Search Engine Optimization, Local SEO Services, Digital Marketing Services, Digital Marketing Agency India, Social Media Marketing, Custom Software Development, CRM Development, ERP Development, SaaS Development, API Development, Cloud Solutions, Enterprise Software Development, Startup IT Solutions, Best Web Development Company India"
-/>
+        <meta
+          name="keywords"
+          content="
+Website Development Company India,
+Website Development Company,
+Best Web Development Company,
+Custom Website Development,
+Website Design Company,
+Business Website Development,
+Professional Website Development,
+Responsive Website Design,
+React JS Development,
+Next.js Development,
+Node.js Development,
+Laravel Development,
+MERN Stack Development,
+Mobile App Development,
+Android App Development,
+iOS App Development,
+Flutter App Development,
+CRM Development,
+ERP Development,
+Software Development Company,
+Custom Software Development,
+SEO Company India,
+Digital Marketing Company,
+UI UX Design,
+Ecommerce Website Development,
+Website Maintenance,
+Cloud Solutions,
+API Development,
+Seankrix Technologies
+"
+        />
 
         <meta name="author" content="Seankrix Technologies" />
         <meta name="publisher" content="Seankrix Technologies" />
-        <meta name="robots" content="index, follow, max-image-preview:large" />
-        <meta name="googlebot" content="index, follow" />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />        <meta name="googlebot" content="index, follow" />
+
 
         <link
           rel="canonical"
           href="https://www.seankrixtechnologies.com/"
         />
 
+        <meta httpEquiv="content-language" content="en-IN" />
+        <meta name="geo.region" content="IN-RJ" />
+        <meta name="geo.country" content="India" />
         {/* Open Graph */}
+        <meta property="og:locale" content="en_IN" />
+
+        <meta property="og:type" content="website" />
+
+        <meta property="og:site_name" content="Seankrix Technologies" />
+
         <meta
           property="og:title"
-          content="Seankrix Technologies | Web Development, Mobile App Development & Digital Solutions"
+          content="Website Development Company in India | Seankrix Technologies"
         />
 
         <meta
           property="og:description"
-          content="Professional Web Development, Mobile App Development, SEO, Digital Marketing, UI/UX Design, E-Commerce, and Custom Software Solutions for businesses."
+          content="Professional Website Development, Mobile Apps, CRM, ERP, SEO & Software Development Services."
+        />
+
+        <meta
+          property="og:image"
+          content="https://www.seankrixtechnologies.com/og-image.webp"
+        />
+
+        <meta
+          property="og:image:width"
+          content="1200"
+        />
+
+        <meta
+          property="og:image:height"
+          content="630"
         />
 
         <meta
           property="og:url"
-          content="https://www.seankrixtechnologies.com/"
+          content="https://www.seankrixtechnologies.com"
         />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Seankrix Technologies" />
-
-        <meta
-          property="og:image"
-          content="https://www.seankrixtechnologies.com/og-image.jpg"
-        />
-
-        <meta
-          property="og:image:alt"
-          content="Seankrix Technologies - Web Development & Digital Solutions"
+        <link
+          rel="canonical"
+          href="https://www.seankrixtechnologies.com/"
         />
 
         {/* Twitter */}
@@ -77,19 +125,104 @@ function Page() {
 
         <meta
           name="twitter:title"
-          content="Seankrix Technologies | Web Development & Digital Solutions"
+          content="Website Development Company in India | Seankrix Technologies"
         />
 
         <meta
           name="twitter:description"
-          content="Grow your business with Web Development, Mobile Apps, SEO, Digital Marketing, and Custom Software Solutions."
+          content="Professional Website Development, Mobile App Development, SEO & Software Solutions."
         />
 
         <meta
           name="twitter:image"
-          content="https://www.seankrixtechnologies.com/og-image.jpg"
+          content="https://www.seankrixtechnologies.com/og-image.webp"
         />
 
+        <link rel="icon" href="/favicon.ico" />
+
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        <link rel="manifest" href="/manifest.json" />
+
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+        />
+
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+
+        <link
+          rel="dns-prefetch"
+          href="//fonts.googleapis.com"
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+
+              "@context": "https://schema.org",
+
+              "@type": "Organization",
+
+              "name": "Seankrix Technologies",
+
+              "url": "https://www.seankrixtechnologies.com",
+
+              "logo": "https://www.seankrixtechnologies.com/logo.png",
+
+              "email": "info@seankrixtechnologies.com",
+
+              "telephone": "+91-8824744976",
+
+
+            })
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+
+              "@context": "https://schema.org",
+
+              "@type": "ProfessionalService",
+
+              "name": "Seankrix Technologies",
+
+              "url": "https://www.seankrixtechnologies.com",
+
+              "telephone": "+91-8824744976",
+
+              "priceRange": "₹₹",
+
+              "email": "info@seankrixtechnologies.com"
+
+            })
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+
+              "@context": "https://schema.org",
+
+              "@type": "WebSite",
+
+              "url": "https://www.seankrixtechnologies.com",
+
+              "name": "Seankrix Technologies"
+
+            })
+          }}
+        />
         {/* Mobile SEO */}
         <meta
           name="viewport"
