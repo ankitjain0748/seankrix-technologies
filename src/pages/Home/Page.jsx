@@ -87,13 +87,23 @@ function Page() {
         "email": "info@seankrixtechnologies.com",
         "telephone": "+91-8824744976",
         "description":
-          "Seankrix Technologies is a leading Website Development Company in India offering website development, mobile app development, SEO, UI/UX, CRM, ERP, cloud solutions, and custom software development.",
+          "Seankrix Technologies is a leading Website Development Company in India specializing in Website Development, Mobile App Development, CRM, ERP, SEO, UI/UX Design, Cloud Solutions, and Custom Software Development.",
         "sameAs": [
           "https://www.linkedin.com/in/seankrix-technologies-73b269407/",
           "https://www.instagram.com/seankrix_technologies_/",
           "https://www.facebook.com/people/Sean-Krix/pfbid021cJr9HS5BcZeYvssgDJYxMLpWUSTykWKhA22JiKeTLLda4aDz9aDdsMmcFtBTuekl/",
           "https://github.com/ankitkumarjain0748-cell"
-        ]
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-8824744976",
+          "contactType": "Customer Support",
+          "areaServed": "IN",
+          "availableLanguage": [
+            "English",
+            "Hindi"
+          ]
+        }
       },
 
       {
@@ -114,24 +124,76 @@ function Page() {
 
       {
         "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://seankrixtechnologies.com/#webpage",
+        "url": "https://seankrixtechnologies.com",
+        "name": "Website Development Company in India | Seankrix Technologies",
+        "isPartOf": {
+          "@id": "https://seankrixtechnologies.com/#website"
+        },
+        "about": {
+          "@id": "https://seankrixtechnologies.com/#organization"
+        },
+        "description":
+          "Professional Website Development, Mobile App Development, SEO, CRM, ERP, Cloud & Software Development Services."
+      },
+
+      {
+        "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "@id": "https://seankrixtechnologies.com/#localbusiness",
         "name": "Seankrix Technologies",
-        "url": "https://seankrixtechnologies.com",
         "image": "https://seankrixtechnologies.com/logo.png",
+        "url": "https://seankrixtechnologies.com",
         "telephone": "+91-8824744976",
         "email": "info@seankrixtechnologies.com",
         "priceRange": "₹₹",
+
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Suraj Pole Gate",
+          "addressLocality": "Jaipur",
+          "addressRegion": "Rajasthan",
+          "postalCode": "302003",
           "addressCountry": "IN"
         },
-        "areaServed": "India"
+
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "26.9239",
+          "longitude": "75.8267"
+        },
+
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+
+        "areaServed": [
+          "India",
+          "United States",
+          "United Kingdom",
+          "Canada",
+          "Australia",
+          "UAE"
+        ]
       },
 
       {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
+        "@id": "https://seankrixtechnologies.com/#service",
         "name": "Seankrix Technologies",
         "url": "https://seankrixtechnologies.com",
         "provider": {
@@ -141,26 +203,45 @@ function Page() {
           "Website Development",
           "Web Application Development",
           "Mobile App Development",
+          "React JS Development",
+          "Next.js Development",
+          "Node.js Development",
+          "MERN Stack Development",
           "Ecommerce Development",
-          "SEO Optimization",
-          "UI UX Design",
-          "Cloud Solutions",
           "CRM Development",
           "ERP Development",
-          "Software Development"
+          "Software Development",
+          "UI UX Design",
+          "SEO Services",
+          "Cloud Solutions"
+        ]
+      },
+
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://seankrixtechnologies.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://seankrixtechnologies.com/"
+          }
         ]
       },
 
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
+        "@id": "https://seankrixtechnologies.com/#faq",
         "mainEntity": [
           {
             "@type": "Question",
             "name": "What services does Seankrix Technologies provide?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We provide website development, mobile app development, ecommerce solutions, SEO, UI/UX design, CRM, ERP, cloud solutions, and custom software development."
+              "text": "We provide Website Development, Mobile App Development, Ecommerce Development, CRM, ERP, SEO, UI UX Design, Cloud Solutions and Custom Software Development."
             }
           },
           {
@@ -168,7 +249,7 @@ function Page() {
             "name": "Do you build custom business websites?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. We develop custom, SEO-friendly, responsive business websites tailored to your business goals."
+              "text": "Yes. We build fully custom, SEO-friendly, responsive business websites tailored to your business."
             }
           },
           {
@@ -176,7 +257,7 @@ function Page() {
             "name": "Which technologies do you use?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We work with React.js, Next.js, Node.js, NestJS, Laravel, TypeScript, MongoDB, MySQL, PostgreSQL, AWS, and modern web technologies."
+              "text": "We use React.js, Next.js, Node.js, NestJS, Laravel, MongoDB, MySQL, PostgreSQL, AWS and modern technologies."
             }
           },
           {
@@ -184,7 +265,7 @@ function Page() {
             "name": "Do you provide SEO services?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. We provide technical SEO, on-page SEO, performance optimization, and SEO-friendly website development."
+              "text": "Yes. We provide Technical SEO, On-page SEO, Website Speed Optimization and Complete SEO Solutions."
             }
           },
           {
@@ -192,7 +273,7 @@ function Page() {
             "name": "How can I contact Seankrix Technologies?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "You can contact us through our website, email info@seankrixtechnologies.com, or call +91 88247 44976."
+              "text": "Email us at info@seankrixtechnologies.com or call +91-8824744976."
             }
           }
         ]
