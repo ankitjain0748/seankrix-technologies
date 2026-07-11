@@ -144,9 +144,6 @@ export default function Index() {
         <Partners />
         <FAQ />
 
-
-
-
       </section>
 
     </Layout>
