@@ -2,8 +2,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Head from "next/head";
 import { QRCodeSVG } from "qrcode.react"; // npm i qrcode.react
-import y1 from "/y1.jpeg";
-import y2 from "/y1.jpeg";
+import y1 from "../asstes/yug.png";
+import y2 from "../asstes/yugveer.png";
 
 /* ================= EDIT YOUR DETAILS HERE ================= */
 const B = {
