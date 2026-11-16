@@ -48,6 +48,8 @@ const B = {
   ],
 };
 
+console.log("b",B.photo)
+
 const css = `
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@500;700;800&display=swap');
 .dn{--ink:#1f3a2a;--leaf:#3fae5a;--lime:#b6e04a;--sun:#ffb703;--orange:#ff7a2f;--teal:#2ec4b6;--paper:#f6f0d8;--soft:#5f7a62;
@@ -173,7 +175,7 @@ const css = `
 .dn button:focus-visible,.dn a:focus-visible,.dn .env:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.dn *{animation-duration:.01s!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01s!important}.dn .ev{opacity:1!important;transform:none!important}}
 `;
-
+console.log(y1,y2)
 /* ---------- shared bits ---------- */
 const PALETTE = ["#3fae5a", "#ffb703", "#ff7a2f", "#2ec4b6", "#b6e04a"];
 const INK = "#1f3a2a";
@@ -358,15 +360,16 @@ function Countdown({ small }) {
 
 /* ---------- photos ---------- */
 function Photo({ src, label, className }) {
+  console.log("Photo2222",src)
   const [bad, setBad] = useState(false);
   if (!src || bad) return <div className={"ph " + (className || "")}><span>{label}</span></div>;
-  return <img className={className} src={src} alt={label} onError={() => setBad(true)} />;
+  return <img className={className} src={src.src ? src.src : src || "../asstes/yug.png"} alt={label} onError={() => setBad(true)} />;
 }
 
 
 function Carousel() {
   const g = B.gallery;
-
+console.log("g",g)
   const [i, setI] = useState(0);
   const [paused, setPaused] = useState(false);
   const x0 = useRef(null);
@@ -985,7 +988,7 @@ export default function DinoBirthdayPage() {
 
             <section>
               <h2>{B.storyTag}</h2>
-              <Photo className="photo" src={B.photo} label={B.first} />
+              <Photo className="photo" src={"../asstes/yug.png"} label={B.first} />
               <Carousel />
               <p style={{ maxWidth: 480, margin: "10px auto 0" }}>{B.story}</p>
             </section>
