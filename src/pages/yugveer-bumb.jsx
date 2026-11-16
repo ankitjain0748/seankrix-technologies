@@ -2,6 +2,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Head from "next/head";
 import { QRCodeSVG } from "qrcode.react"; // npm i qrcode.react
+import y1 from "/y1.jpeg";
+import y2 from "/y1.jpeg";
 
 /* ================= EDIT YOUR DETAILS HERE ================= */
 const B = {
@@ -33,14 +35,16 @@ const B = {
     { icon: "🕺", name: "Dino dinner & stomp dance", when: "7:30 pm", where: "Main hall" },
   ],
   music: "", // e.g. "/birthday-song.mp3" in /public. Empty = built-in "Happy Birthday" music box
-  photo: "/assets/yugveer.jpg", // /public/assets
+  photo: y1, // /public/assets
   storyTag: "Four years of tiny stomps",
   story: "Our little dino explorer Yugveer was born on 28 November 2022, and he has been roaring, stomping and digging for fossils ever since. Come help us make his 4th birthday the biggest dino adventure yet.",
   gallery: [
-    { src: "/assets/y1.jpg", caption: "Baby Yugveer, tiny roar" },
-    { src: "/assets/y2.jpg", caption: "First day at the zoo" },
-    { src: "/assets/y3.jpg", caption: "Dino-obsessed at age 3" },
-    { src: "/assets/y4.jpg", caption: "Now: 4 and unstoppable" },
+    { src: y1, caption: "Baby Yugveer, tiny roar" },
+    { src: y2, caption: "First day at the zoo" },
+ { src: y1, caption: "Baby Yugveer, tiny roar" },
+    { src: y2, caption: "First day at the zoo" },
+     { src: y1, caption: "Baby Yugveer, tiny roar" },
+    { src: y2, caption: "First day at the zoo" },
   ],
 };
 
@@ -359,38 +363,113 @@ function Photo({ src, label, className }) {
   return <img className={className} src={src} alt={label} onError={() => setBad(true)} />;
 }
 
+
 function Carousel() {
   const g = B.gallery;
+
   const [i, setI] = useState(0);
-  const [hold, setHold] = useState(false);
+  const [paused, setPaused] = useState(false);
   const x0 = useRef(null);
+
+  // Automatic carousel
   useEffect(() => {
-    if (hold) return;
-    const t = setInterval(() => setI((n) => (n + 1) % g.length), 4500);
-    return () => clearInterval(t);
-  }, [hold, g.length]);
-  const go = (d) => { setHold(true); setI((n) => (n + d + g.length) % g.length); };
+    if (paused || g.length <= 1) return;
+
+    const timer = setInterval(() => {
+      setI((current) => (current + 1) % g.length);
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, [paused, g.length]);
+
+  // Previous / Next
+  const go = (direction) => {
+    setI((current) => (current + direction + g.length) % g.length);
+  };
+
+  // Swipe support
+  const handlePointerDown = (e) => {
+    x0.current = e.clientX;
+  };
+
+  const handlePointerUp = (e) => {
+    if (x0.current === null) return;
+
+    const diff = e.clientX - x0.current;
+
+    if (Math.abs(diff) > 40) {
+      go(diff < 0 ? 1 : -1);
+    }
+
+    x0.current = null;
+  };
+
   return (
     <div
       className="car"
-      onPointerDown={(e) => { x0.current = e.clientX; }}
-      onPointerUp={(e) => {
-        if (x0.current != null && Math.abs(e.clientX - x0.current) > 40) go(e.clientX < x0.current ? 1 : -1);
+      onPointerDown={handlePointerDown}
+      onPointerUp={handlePointerUp}
+      onPointerCancel={() => {
         x0.current = null;
       }}
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onTouchStart={() => setPaused(true)}
+      onTouchEnd={() => setPaused(false)}
     >
       <div className="frame">
-        {g.map((p, k) => (<div key={k} className={"slide" + (k === i ? " on" : "")}><Photo src={p.src} label={p.caption} /></div>))}
+        {g.map((p, k) => (
+          <div
+            key={k}
+            className={`slide ${k === i ? "on" : ""}`}
+            aria-hidden={k !== i}
+          >
+            <Photo
+              src={p.src}
+              label={p.caption}
+            />
+          </div>
+        ))}
       </div>
-      <button type="button" className="arr l" onClick={() => go(-1)} aria-label="Previous photo">‹</button>
-      <button type="button" className="arr r" onClick={() => go(1)} aria-label="Next photo">›</button>
-      <p className="disp cap">{g[i].caption}</p>
+
+      <button
+        type="button"
+        className="arr l"
+        onClick={() => go(-1)}
+        aria-label="Previous photo"
+      >
+        ‹
+      </button>
+
+      <button
+        type="button"
+        className="arr r"
+        onClick={() => go(1)}
+        aria-label="Next photo"
+      >
+        ›
+      </button>
+
+      <p className="disp cap" aria-live="polite">
+        {g[i]?.caption}
+      </p>
+
       <div className="dots">
-        {g.map((_, k) => (<button type="button" key={k} className={k === i ? "on" : ""} onClick={() => { setHold(true); setI(k); }} aria-label={`Photo ${k + 1}`} />))}
+        {g.map((_, k) => (
+          <button
+            type="button"
+            key={k}
+            className={k === i ? "on" : ""}
+            onClick={() => setI(k)}
+            aria-label={`Photo ${k + 1}`}
+            aria-current={k === i ? "true" : undefined}
+          />
+        ))}
       </div>
     </div>
   );
 }
+
 
 /* ---------- Stage 2: hatch the eggs to reveal the date ---------- */
 const EGGS = [
