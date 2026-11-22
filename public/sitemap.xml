@@ -132,6 +132,20 @@
   </url>
 
   <url>
+    <loc>https://seankrixtechnologies.com/blogs/digital-birthday-invitation-website-modern-celebration</loc>
+    <lastmod>2026-11-22T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://seankrixtechnologies.com/blogs/digital-engagement-invitation-website-modern-ceremony</loc>
+    <lastmod>2026-11-22T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://seankrixtechnologies.com/blogs/ai-in-web-development-future-of-business</loc>
     <lastmod>2026-09-02T00:00:00+05:30</lastmod>
     <changefreq>monthly</changefreq>
@@ -229,7 +243,35 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- OTHER PAGES -->
+  <!-- INVITATION & OTHER PAGES -->
+  <url>
+    <loc>https://seankrixtechnologies.com/wedding-invitation</loc>
+    <lastmod>2026-11-22T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://seankrixtechnologies.com/birthday</loc>
+    <lastmod>2026-11-22T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://seankrixtechnologies.com/yugveer-bumb</loc>
+    <lastmod>2026-11-22T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://seankrixtechnologies.com/engagement</loc>
+    <lastmod>2026-11-22T00:00:00+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://seankrixtechnologies.com/plan</loc>
     <lastmod>2026-07-21T00:00:00+05:30</lastmod>
@@ -246,34 +288,6 @@
 
   <url>
     <loc>https://seankrixtechnologies.com/web-planner</loc>
-    <lastmod>2026-07-21T00:00:00+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://seankrixtechnologies.com/wedding-invitation</loc>
-    <lastmod>2026-07-21T00:00:00+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://seankrixtechnologies.com/birthday</loc>
-    <lastmod>2026-07-21T00:00:00+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://seankrixtechnologies.com/yugveer-bumb</loc>
-    <lastmod>2026-07-21T00:00:00+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://seankrixtechnologies.com/engagement</loc>
     <lastmod>2026-07-21T00:00:00+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
