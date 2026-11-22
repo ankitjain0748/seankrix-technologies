@@ -66,13 +66,13 @@ export default function Index() {
         {/* Canonical */}
         <link
           rel="canonical"
-          href="https://www.seankrixtechnologies.com/contact-us"
+          href="https://www.seankrixtechnologies.com/contact"
         />
 
         <link
           rel="alternate"
           hrefLang="en-IN"
-          href="https://www.seankrixtechnologies.com/contact-us"
+          href="https://www.seankrixtechnologies.com/contact"
         />
 
         {/* Open Graph */}
@@ -92,7 +92,7 @@ export default function Index() {
 
         <meta
           property="og:url"
-          content="https://www.seankrixtechnologies.com/contact-us"
+          content="https://www.seankrixtechnologies.com/contact"
         />
 
         <meta
@@ -153,7 +153,7 @@ export default function Index() {
               "@context": "https://schema.org",
               "@type": "ContactPage",
               "name": "Contact Seankrix Technologies",
-              "url": "https://www.seankrixtechnologies.com/contact-us",
+              "url": "https://www.seankrixtechnologies.com/contact",
               "description":
                 "Contact Seankrix Technologies for Website Development, Mobile App Development, SEO, Digital Marketing and Software Development Services."
             }),

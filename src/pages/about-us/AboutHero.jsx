@@ -77,7 +77,7 @@ export default function AboutHero() {
             </Link>
 
             <Link
-              href="/contact-us"
+              href="/contact"
               className="px-8 py-4 rounded-full border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black transition duration-300"
             >
               Contact Us

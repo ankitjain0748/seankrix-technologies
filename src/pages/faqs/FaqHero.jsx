@@ -61,7 +61,7 @@ export default function FaqHero() {
   {/* CTA */}
   <div className="mt-10 flex flex-wrap justify-center gap-4">
     <Link
-      href="/contact-us"
+      href="/contact"
       className="rounded-full bg-cyan-500 px-8 py-4 font-semibold text-black transition hover:bg-white"
     >
       Contact Our Team

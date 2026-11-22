@@ -145,7 +145,7 @@ export default function BlogPage() {
               </a>
 
               <a
-                href="/contact-us"
+                href="/contact"
                 className="rounded-full border border-cyan-500 px-8 py-4 font-semibold text-cyan-400 transition hover:bg-cyan-500 hover:text-black"
               >
                 Get Free Consultation

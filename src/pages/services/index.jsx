@@ -206,7 +206,7 @@
             <div className="mt-10 flex flex-wrap justify-center gap-4">
 
               <a
-                href="/contact-us"
+                href="/contact"
                 className="px-8 py-4 rounded-full bg-cyan-500 text-black font-semibold hover:bg-white transition duration-300"
               >
                 Get Free Consultation
