@@ -4,31 +4,94 @@ import { QRCodeSVG } from "qrcode.react"; // npm i qrcode.react
 
 /* ================= EDIT YOUR DETAILS HERE ================= */
 const E = {
-  groom: "Aarav",
-  bride: "Meera",
-  initials: "A & M",
+  groom: "Aarav", // Update with Groom's name
+  bride: "Meera", // Update with Bride's name
+  initials: "A & M", // Update initials
   blessing: "॥ श्री गणेशाय नमः ॥",
   padharo: "पधारो सा", // Rajasthani welcome. Leave "" to hide
-  weddingDate: "Sunday, 14th February 2027", // shown on the wedding scene
-  weddingCity: "RAMBAGH PALACE · JAIPUR",
-  dateISO: "2027-02-14T19:00:00", // pheras: used for the live countdown
-  groomPhoto: "/assets/groom.jpg", // put both photos in /public/assets (shown on every invitation scene)
+  weddingDate: "Tuesday, 9th March 2027", // shown on the wedding scene
+  weddingCity: "SULTAN HOUSE GARDEN · JAIPUR",
+  dateISO: "2027-03-09T19:00:00", // Baarat arrival (7 PM): used for the live countdown
+  groomPhoto: "/assets/groom.jpg", // put both photos in /public/assets
   bridePhoto: "/assets/bride.jpg",
-  groomFamily: ["Son of", "Mr. Rajesh Sharma", "& Mrs. Sunita Sharma", "Sharma Parivar, Jaipur"],
-  brideFamily: ["Daughter of", "Mr. Anil Verma", "& Mrs. Kavita Verma", "Verma Parivar, Jodhpur"],
+  groomFamily: ["Son of", "Mr. Rajesh Sharma", "& Mrs. Sunita Sharma", "Sharma Parivar, Jaipur"], // Update family details
+  brideFamily: ["Daughter of", "Mr. Anil Verma", "& Mrs. Kavita Verma", "Verma Parivar, Jodhpur"], // Update family details
   // one entry per function. Each gets its own film scene AND its own card on the page
   funcs: [
-    { key: "haldi", name: "Haldi", icon: "🌼", date: "Friday, 12th February 2027", time: "11:00 am onwards", venue: "Family Haveli", venue2: "Civil Lines, Jaipur, Rajasthan", program: ["Haldi rasam", "Dhol & folk music", "Lunch & aashirwad"], mapUrl: "https://maps.google.com/?q=Civil+Lines+Jaipur" },
-    { key: "mehendi", name: "Mehendi", icon: "🌿", date: "Friday, 12th February 2027", time: "4:00 pm onwards", venue: "The Garden Pavilion", venue2: "C-Scheme, Jaipur, Rajasthan", program: ["Mehendi artists", "Ghoomar & folk dance", "High tea"], mapUrl: "https://maps.google.com/?q=C-Scheme+Jaipur" },
-    { key: "sangeet", name: "Sangeet", icon: "🎶", date: "Saturday, 13th February 2027", time: "7:00 pm onwards", venue: "Rang Mahal", venue2: "Amer Road, Jaipur, Rajasthan", program: ["Family performances", "DJ & dandiya night", "Gala dinner"], mapUrl: "https://maps.google.com/?q=Amer+Road+Jaipur" },
-    { key: "phere", name: "Phere", icon: "🔥", date: "Sunday, 14th February 2027", time: "Baraat 6:00 pm · Pheras 8:00 pm", venue: "Rambagh Palace", venue2: "Bhawani Singh Road, Jaipur, Rajasthan", program: ["Baraat aagman", "Jaimala", "Saat pheras", "Vidaai"], mapUrl: "https://maps.google.com/?q=Rambagh+Palace+Jaipur", pin: true },
+    {
+      key: "haldi",
+      name: "Haldi",
+      icon: "🌼",
+      date: "Monday, 8th March 2027",
+      time: "9:00 am onwards",
+      venue: "D54, Vinayak Residency",
+      venue2: "Manglam City, Kalwar Road, Jaipur",
+      program: ["Haldi rasam", "Dhol & folk songs", "Aashirwad"],
+      mapUrl: "https://maps.google.com/?q=Vinayak+Residency+Manglam+City+Kalwar+Road+Jaipur",
+    },
+    {
+      key: "mehandi",
+      name: "Mehandi",
+      icon: "🌿",
+      date: "Monday, 8th March 2027",
+      time: "10:00 am onwards",
+      venue: "D54, Vinayak Residency",
+      venue2: "Manglam City, Kalwar Road, Jaipur",
+      program: ["Mehandi ceremony", "Folk music & dance", "Refreshments"],
+      mapUrl: "https://maps.google.com/?q=Vinayak+Residency+Manglam+City+Kalwar+Road+Jaipur",
+    },
+    {
+      key: "sangeet",
+      name: "Ladies Sangeet",
+      icon: "🎶",
+      date: "Monday, 8th March 2027",
+      time: "12:00 pm onwards",
+      venue: "D54, Vinayak Residency",
+      venue2: "Manglam City, Kalwar Road, Jaipur",
+      program: ["Ladies sangeet", "Ghoomar & folk songs", "Lunch"],
+      mapUrl: "https://maps.google.com/?q=Vinayak+Residency+Manglam+City+Kalwar+Road+Jaipur",
+    },
+    {
+      key: "chaak",
+      name: "Chaak",
+      icon: "🏺",
+      date: "Monday, 8th March 2027",
+      time: "4:00 pm onwards",
+      venue: "D54, Vinayak Residency",
+      venue2: "Manglam City, Kalwar Road, Jaipur",
+      program: ["Chaak pujan", "Traditional rituals", "Evening high tea"],
+      mapUrl: "https://maps.google.com/?q=Vinayak+Residency+Manglam+City+Kalwar+Road+Jaipur",
+    },
+    {
+      key: "bhaat",
+      name: "Bhaat",
+      icon: "🎁",
+      date: "Tuesday, 9th March 2027",
+      time: "2:00 pm onwards",
+      venue: "Sultan House Garden",
+      venue2: "Jaipur, Rajasthan",
+      program: ["Bhaat / Mayra ceremony", "Family welcome", "Lunch & celebrations"],
+      mapUrl: "https://maps.google.com/?q=Sultan+House+Garden+Jaipur",
+    },
+    {
+      key: "baarat",
+      name: "Baarat Arrival",
+      icon: "🐎",
+      date: "Tuesday, 9th March 2027",
+      time: "7:00 pm onwards",
+      venue: "Sultan House Garden",
+      venue2: "Jaipur, Rajasthan",
+      program: ["Baarat aagman", "Jaimala & pheras", "Gala dinner"],
+      mapUrl: "https://maps.google.com/?q=Sultan+House+Garden+Jaipur",
+      pin: true,
+    },
   ],
-  rsvpPhone: "919999999999", // WhatsApp number with country code, no + or spaces
-  rsvpBy: "5 February",
+  rsvpPhone: "919999999999", // Update with your WhatsApp number (with country code, no + or spaces)
+  rsvpBy: "1 March",
   dress: "Rajasthani rangeen: bandhej, leheriya, safa & poshak",
   music: "", // e.g. "/wedding-song.mp3" in /public. Empty = built-in shehnai & dholak music
   storyTag: "Do dil, do parivar, ek naya safar",
-  story: "With the blessings of our elders and the joy of our families, we invite you to celebrate the wedding of Aarav and Meera in the true Rajasthani way, with music, colour, mehmaan-nawazi and lots of love. Padharo sa!",
+  story: "With the blessings of our elders and the joy of our families, we invite you to celebrate this joyous wedding in the true Rajasthani way, with music, colour, mehmaan-nawazi and lots of love. Padharo sa!",
   gallery: [
     { src: "/assets/w1.jpg", caption: "Where it all began" },
     { src: "/assets/w2.jpg", caption: "Our favourite memories" },
